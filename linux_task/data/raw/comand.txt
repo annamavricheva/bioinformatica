@@ -1,0 +1,331 @@
+root@HonorX14:~# ls
+Bioinf_2026  DS_Bootcamp.Day00-1  snap
+root@HonorX14:~# cd Bioinf_2026
+root@HonorX14:~/Bioinf_2026# ls
+script.sh
+root@HonorX14:~/Bioinf_2026# ssh -T git@github.com
+The authenticity of host 'github.com (140.82.121.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+root@HonorX14:~/Bioinf_2026# ls -la ~/.ssh/
+total 24
+drwx------ 2 root root 4096 Feb  4  2025 .
+drwx------ 9 root root 4096 Feb  4 18:06 ..
+-rw------- 1 root root 2602 Jan 29  2025 id_rsa
+-rw-r--r-- 1 root root  567 Jan 29  2025 id_rsa.pub
+-rw------- 1 root root  978 Mar 18 15:08 known_hosts
+-rw-r--r-- 1 root root  222 Feb  4  2025 known_hosts.old
+root@HonorX14:~/Bioinf_2026# cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQClUuoOlE6YmFgb3rFkr+0K3eAMwhn7X7ml9xAB3jucD0ppvO7lfNDFq80ZJHTUsJlIau8rfXAYqmTqhcHf2osRFUNSny/qQHyjHR6J4iP2LwOVWloe40fVjFMZgzpiw7WxBX0piRWFnM8ZotZnJxDNxF8aYV41GJiaib81T9Fo52kWKym6q2by5AA+fcqK24nMrsCFH2Q0Vj/M7jXGQVChCTFNvL342tLf35BAFb3g5xSOQavEcWk4guuwgIox141C0gcsnYORLZ1FJXqdN8xdSLW/xr73xhh8MibGOTId4rX0J8FA42JsNXEA41SSJoKrW8S4y2dLwo/NbkuMoJWtEa3MUZ38egSBgSEGkafu8KrBDj+zkddN1Ot/jcOd7LPFgL1zOpKmyUIsYi9SOdJiQAUnB71Se7nbcaRRGUkOobZiNyPR3zadBDCY3s5WjKdf5LryAYjgt5gxW1lMMGZJbewonoPeK41VyqIlFCi9YS/pMHVgLSIO6PHcxmuXut0= root@HonorX14
+root@HonorX14:~/Bioinf_2026# ssh -T git@github.com
+Hi annamavricheva! You've successfully authenticated, but GitHub does not provide shell access.
+root@HonorX14:~/Bioinf_2026# git clone git@github.com:annamavricheva/bioinformatica.git
+Cloning into 'bioinformatica'...
+warning: You appear to have cloned an empty repository.
+root@HonorX14:~/Bioinf_2026# ls
+bioinformatica  script.sh
+root@HonorX14:~/Bioinf_2026# cd bioinformatica
+root@HonorX14:~/Bioinf_2026/bioinformatica# touch README.md
+root@HonorX14:~/Bioinf_2026/bioinformatica# ls
+README.md
+root@HonorX14:~/Bioinf_2026/bioinformatica# nano README.md
+root@HonorX14:~/Bioinf_2026/bioinformatica# cat README.md
+root@HonorX14:~/Bioinf_2026/bioinformatica# ls
+README.md
+root@HonorX14:~/Bioinf_2026/bioinformatica# vim README.md
+root@HonorX14:~/Bioinf_2026/bioinformatica# nano README.md
+root@HonorX14:~/Bioinf_2026/bioinformatica# nano README.md
+root@HonorX14:~/Bioinf_2026/bioinformatica# cat README.md
+Все действия должны быть выполнены с помощью командной строки.
+Подготовка репозитория
+Создайте на GitHub новый пустой публичный репозиторий с названием bioinformatics_hw (или названием на ваш выбор).
+Клонируйте этот репозиторий к себе на компьютер (в вашу домашнюю директорию Linux).
+Перейдите в папку клонированного репозитория.
+Создайте файл README.md с кратким описанием задания и вашей фамилией. Можете хоть скопировать это дз)
+Сделайте первый коммит с сообщением Init и отправьте (push) его на GitHub.
+Работа с директориями и файлами
+Одной командой создайте вложенную структуру папок внутри вашего репозитория: linux_task/data/raw/
+Перейдите в папку raw.
+Создайте три пустых файла: sample1.tsv, sample2.tsv, sample3.tsv.
+Запишите в файл sample1.tsv строку: GeneID\tExpression_Value (где \t — это символ табуляции).
+Выведите содержимое файла sample1.tsv на экран.
+Создайте коммит с сообщением Create raw data structure.
+Перенаправление потоков и поиск
+В этой же папке (linux_task/data/raw/) создайте файл sequencing_summary.txt со следующим содержимым (используйте echo или cat):
+run_id: RUN001
+date: 2026-02-18
+sample: sample1
+platform: Illumina
+read_length: 150
+total_reads: 1024
+sample: sample2
+total_reads: 2048
+sample: sample3
+total_reads: 4096
+Найдите в файле sequencing_summary.txt все строки, содержащие слово sample, и сохраните их в новый файл samples_list.txt.
+Подсчитайте количество таких строк (используя wc -l) и допишите это число в конец файла samples_list.txt в виде Total samples found: <число>.
+Выведите на экран последние 5 строк файла samples_list.txt, чтобы убедиться, что число дописалось правильно.
+Создайте коммит с сообщением Add sample list and count.
+Git: Восстановление и отмена
+Создайте новую ветку git-practice и переключитесь на неё.
+Создайте файл important_note.txt и запишите в него "This is very important data.".
+Добавьте файл в отслеживание и сделайте коммит.
+Удалите файл important_note.txt из рабочей директории (командой rm).
+Убедитесь, что файл исчез, и проверьте статус Git (git status).
+Восстановите удаленный файл из последнего коммита с помощью Git.
+Создайте в корне репозитория файл git_command.txt, в который запишите команду, с помощью которой вы восстановили файл.
+Создайте коммит с сообщением Restore deleted file.
+История команд
+Сохраните историю выполненных выше команд в отдельный txt файл
+Также сделайте коммит этого файла на GitHub
+
+
+
+Часть 2: Знакомство с R (4 балла)
+Создание R-скрипта
+Вернитесь в основную ветку (main или master).
+Создайте в корне репозитория папку r_task.
+Внутри папки r_task создайте R-скрипт с именем first_plot.R.
+Напишите скрипт, который:
+Создает три простых вектора: genes <- c("BRCA1", "TP53", "EGFR"), expression <- c(12.5, 45.2, 30.1), condition <- c("Control", "Treatment", "Treatment").
+Объединяет их в таблицу (data frame) с именем exp_data.
+Выводит структуру полученной таблицы (str()) в консоль.
+Строит столбчатую диаграмму (barplot), где по оси X — названия генов, а высота столбцов — значение экспрессии. Сохраняет этот график в файл r_task/expression_plot.png.
+Создайте коммит с сообщением Add R script and first plot.
+Чтение данных и работа с ними
+Создайте файл r_task/sample_data.csv со следующими данными (это можно сделать вручную или с помощью команд echo в терминале):
+Sample,Age,Score,Group
+S1,25,85,Control
+S2,30,92,Treatment
+S3,22,78,Control
+S4,35,88,Treatment
+S5,28,95,Treatment
+Напишите второй R-скрипт r_task/analyze_data.R, который:
+Считывает файл sample_data.csv.
+Выводит в консоль среднее значение (mean) показателя Score.
+Выводит в консоль максимальное значение Score в группе Treatment. Для этого нужно отделить данные по условию.
+Строит boxplot (ящик с усами) для показателя Score в зависимости от группы (Group). График должен иметь заголовок "Score Distribution by Group".
+Сохраняет этот график в файл r_task/score_boxplot.png.
+Убедитесь, что все скрипты работают (можно запустить Rscript first_plot.R и Rscript analyze_data.R из терминала). Планируйте структуру так, чтобы при запуске скриптов не было ошибок.
+Создайте коммит с сообщением Add data analysis script.
+root@HonorX14:~/Bioinf_2026/bioinformatica# ls
+README.md
+root@HonorX14:~/Bioinf_2026/bioinformatica# git add .
+root@HonorX14:~/Bioinf_2026/bioinformatica# git commit -m 'Init'
+[main (root-commit) a938abc] Init
+ Committer: root <root@HonorX14.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 72 insertions(+)
+ create mode 100644 README.md
+root@HonorX14:~/Bioinf_2026/bioinformatica# git checkout -b develop
+Switched to a new branch 'develop'
+root@HonorX14:~/Bioinf_2026/bioinformatica# git status
+On branch develop
+nothing to commit, working tree clean
+root@HonorX14:~/Bioinf_2026/bioinformatica# git push origin develop
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 2.54 KiB | 520.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:annamavricheva/bioinformatica.git
+ * [new branch]      develop -> develop
+root@HonorX14:~/Bioinf_2026/bioinformatica# mkdir -p linux_task/data/raw
+root@HonorX14:~/Bioinf_2026/bioinformatica# ls
+README.md  linux_task
+root@HonorX14:~/Bioinf_2026/bioinformatica# cd linux
+-bash: cd: linux: No such file or directory
+root@HonorX14:~/Bioinf_2026/bioinformatica# cd linux_task
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task# ls
+data
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task# cd data
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data# ls
+raw
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data# cd raw
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# ls
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# touch sample1.tsv
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# touch sample2.tsv
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# touch sample3.tsv
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# ls
+sample1.tsv  sample2.tsv  sample3.tsv
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# nano sample1.tsv
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# cat sample1.tsv
+GeneID
+Expression_Value
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# git add sample1.tsv
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# git commit -m "Create raw data structure"
+[develop f232ee6] Create raw data structure
+ Committer: root <root@HonorX14.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+ create mode 100644 linux_task/data/raw/sample1.tsv
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# git push origin develop
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 442 bytes | 442.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:annamavricheva/bioinformatica.git
+   a938abc..f232ee6  develop -> develop
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# echo -e "run_id: RUN001\ndate: 2026-02-18\nsample: sample1\nplatform: Illumina\nread_length: 150\ntotal_reads: 1024\nsample: sample2\ntotal_reads: 2048\nsample: sample3\ntotal_reads: 4096" > sequencing_summary.txt
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# cat sequencing_summary.txt
+run_id: RUN001
+date: 2026-02-18
+sample: sample1
+platform: Illumina
+read_length: 150
+total_reads: 1024
+sample: sample2
+total_reads: 2048
+sample: sample3
+total_reads: 4096
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# touch samples_list.txt
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# grep "sample" sequencing_summary.txt > samples_list.txt
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# ls
+sample1.tsv  sample2.tsv  sample3.tsv  samples_list.txt  sequencing_summary.txt
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# cat samples_list.txt
+sample: sample1
+sample: sample2
+sample: sample3
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# echo "Total samples found: $(grep -c "sample" sequencing_summary.txt)" >> samples_list.txt
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# cat samples_list.txt
+sample: sample1
+sample: sample2
+sample: sample3
+Total samples found: 3
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# tail -n 5 samples_list.txt
+sample: sample1
+sample: sample2
+sample: sample3
+Total samples found: 3
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# git add .
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# git commit -m 'Add sample list and count'
+[develop d677f3a] Add sample list and count
+ Committer: root <root@HonorX14.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 14 insertions(+)
+ create mode 100644 linux_task/data/raw/sample2.tsv
+ create mode 100644 linux_task/data/raw/sample3.tsv
+ create mode 100644 linux_task/data/raw/samples_list.txt
+ create mode 100644 linux_task/data/raw/sequencing_summary.txt
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# git push origin develop
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (8/8), 694 bytes | 347.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:annamavricheva/bioinformatica.git
+   f232ee6..d677f3a  develop -> develop
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# git checkout -b git-practice
+Switched to a new branch 'git-practice'
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# git status
+On branch git-practice
+nothing to commit, working tree clean
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# touch important_note.txt
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# nano important_note.txt
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# git add important_note.txt
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# git commit -m 'commit'
+[git-practice bf2666d] commit
+ Committer: root <root@HonorX14.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 linux_task/data/raw/important_note.txt
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# rm important_note.txt
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# ls
+sample1.tsv  sample2.tsv  sample3.tsv  samples_list.txt  sequencing_summary.txt
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# git status
+On branch git-practice
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    important_note.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# git restore important_note.txt
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# ls
+important_note.txt  sample1.tsv  sample2.tsv  sample3.tsv  samples_list.txt  sequencing_summary.txt
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# touch git_command.txt
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# nano git_command.txt
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# git add .
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# git commit -m 'Restore deleted file'
+[git-practice 5c1e58a] Restore deleted file
+ Committer: root <root@HonorX14.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 linux_task/data/raw/git_command.txt
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw# git push origin git-practice
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (12/12), 883 bytes | 220.00 KiB/s, done.
+Total 12 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'git-practice' on GitHub by visiting:
+remote:      https://github.com/annamavricheva/bioinformatica/pull/new/git-practice
+remote:
+To github.com:annamavricheva/bioinformatica.git
+ * [new branch]      git-practice -> git-practice
+root@HonorX14:~/Bioinf_2026/bioinformatica/linux_task/data/raw#
