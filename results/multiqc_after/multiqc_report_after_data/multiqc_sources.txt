@@ -1,0 +1,3 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	ERR14230537	/home/STUDY/FBMF/studfbmf02_07/bioinf_hw5/results/fastqc_trimmed/ERR14230537_trimmed_fastqc.zip
+FastQC	all_sections	ERR14230552	/home/STUDY/FBMF/studfbmf02_07/bioinf_hw5/results/fastqc_trimmed/ERR14230552_trimmed_fastqc.zip

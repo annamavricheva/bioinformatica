@@ -1,0 +1,2 @@
+/var/spool/slurm/job68576/slurm_script: line 15: multiqc: command not found
+[2026-05-18T21:40:32.076] error: private-tmpdir: /tmp/68576.batch.0 nftw error No such file or directory

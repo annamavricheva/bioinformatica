@@ -1,0 +1,2 @@
+/var/spool/slurm/job68603/slurm_script: line 13: /var/spool/slurm/job68603/env.sh: No such file or directory
+[2026-05-18T20:45:15.435] error: private-tmpdir: /tmp/68603.batch.0 nftw error No such file or directory

@@ -1,0 +1,2 @@
+/var/spool/slurm/job68604/slurm_script: line 29: /home/STUDY/FBMF/bioinformatics/anaconda3/bin/fastp: No such file or directory
+[2026-05-18T20:47:42.294] error: private-tmpdir: /tmp/68604.batch.0 nftw error No such file or directory

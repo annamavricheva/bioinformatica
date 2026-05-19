@@ -1,0 +1,5 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	ERR14230537	/home/STUDY/FBMF/studfbmf02_07/bioinf_hw5/results/fastqc_raw/ERR14230537_fastqc.zip
+FastQC	all_sections	ERR14230552	/home/STUDY/FBMF/studfbmf02_07/bioinf_hw5/results/fastqc_raw/ERR14230552_fastqc.zip
+FastQC	all_sections	ERR14230577	/home/STUDY/FBMF/studfbmf02_07/bioinf_hw5/results/fastqc_raw/ERR14230577_fastqc.zip
+FastQC	all_sections	ERR14230595	/home/STUDY/FBMF/studfbmf02_07/bioinf_hw5/results/fastqc_raw/ERR14230595_fastqc.zip
