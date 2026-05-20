@@ -1,0 +1,2 @@
+/var/spool/slurm/job68789/slurm_script: line 19: samtools: command not found
+[2026-05-20T08:27:47.234] error: private-tmpdir: /tmp/68789.batch.0 nftw error No such file or directory

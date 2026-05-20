@@ -1,0 +1,51 @@
+
+Отчёт по заданию 6 — RNA-seq пайплайн (Часть 1: FastQC + MultiQC)
+
+Студент: studfbmf02_07
+Дата: 2026-05-19
+Риды: Eg_Treg_S71_R1_001.fastq.gz и Eg_Treg_S71_R2_001.fastq.gz
+Путь к данным: /home/STUDY/FBMF/bioinformatics/rnaseq_map_star/raw_data/
+
+
+Часть 1 — FastQC + MultiQC (сырые данные)
+
+
+Результаты FastQC (по данным MultiQC)
+
+Модуль                          R1 (сырой)    R2 (сырой)    Комментарий
+Per base sequence quality       PASS          PASS          Качество по позициям хорошее
+Per tile sequence quality       PASS          WARN          R2 — предупреждение по плитке
+Per base sequence content       FAIL          FAIL          Типично для RNA-seq
+Per sequence GC content         FAIL          WARN          Нетипичное распределение
+Sequence Duplication Levels     PASS          PASS          В MultiQC высокий % дубликатов
+Overrepresented sequences       FAIL          FAIL          Типично для RNA-seq
+Adapter Content                 PASS          PASS          Адаптеры не доминируют
+
+Числа ридов (MultiQC)
+
+R1: ~19.78 M ридов
+R2: ~19.78 M ридов
+Всего парных ридов: 39,558,686
+
+Файлы, созданные в ходе выполнения
+
+task_6/
+├── results/
+│   ├── fastqc_raw/
+│   │   ├── Eg_Treg_S71_R1_001_fastqc.html
+│   │   ├── Eg_Treg_S71_R1_001_fastqc.zip
+│   │   ├── Eg_Treg_S71_R2_001_fastqc.html
+│   │   └── Eg_Treg_S71_R2_001_fastqc.zip
+│   └── multiqc_before/
+│       ├── multiqc_report.html
+│       └── multiqc_report_data/
+└── slurm/
+    ├── 01_fastqc_raw.slurm
+    ├── 02_multiqc_before.slurm
+    └── env.sh
+
+Вывод
+
+FastQC и MultiQC успешно выполнены. Качество сырых ридов соответствует ожиданиям для RNA-seq данных. Типичные предупреждения (GC-состав, перепредставленные последовательности) будут скорректированы на этапе fastp.
+
+Часть 1 задания выполнена полностью.

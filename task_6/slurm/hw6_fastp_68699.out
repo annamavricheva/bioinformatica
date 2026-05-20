@@ -1,0 +1,8 @@
+fastp finished. Trimmed reads in /home/STUDY/FBMF/studfbmf02_07/task_6/results/trimmed
+total 1454962
+drwxr-xr-x  2 studfbmf02_07 fbmf         4 May 19 11:04 .
+drwxr-xr-x. 8 studfbmf02_07 fbmf         6 May 19 10:58 ..
+-rw-r--r--  1 studfbmf02_07 fbmf    452177 May 19 11:04 Eg_Treg_S71.fastp.html
+-rw-r--r--  1 studfbmf02_07 fbmf    110717 May 19 11:04 Eg_Treg_S71.fastp.json
+-rw-r--r--  1 studfbmf02_07 fbmf 701785104 May 19 11:04 Eg_Treg_S71_R1_trimmed.fastq.gz
+-rw-r--r--  1 studfbmf02_07 fbmf 787531110 May 19 11:04 Eg_Treg_S71_R2_trimmed.fastq.gz

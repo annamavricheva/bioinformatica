@@ -1,0 +1,2 @@
+/var/spool/slurm/job68696/slurm_script: line 24: /home/STUDY/FBMF/studfbmf02_03/.conda_envs/bio_hw5/bin/fastp: Permission denied
+[2026-05-19T10:57:49.452] error: private-tmpdir: /tmp/68696.batch.0 nftw error No such file or directory

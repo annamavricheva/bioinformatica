@@ -1,0 +1,5 @@
+Sample	Top overrepresented sequence	Sum of remaining overrepresented sequences
+Eg_Treg_S71_R1	0.0	0.0
+Eg_Treg_S71_R1_001	1.1990489269537417	2.1006511692526897
+Eg_Treg_S71_R2	0.0	0.0
+Eg_Treg_S71_R2_001	0.0	0.0

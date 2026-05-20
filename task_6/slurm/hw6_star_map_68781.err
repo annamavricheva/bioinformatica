@@ -1,0 +1,7 @@
+
+EXITING because of fatal ERROR: could not make temporary directory: /tmp/star_studfbmf02_07_3451842/
+SOLUTION: (i) please check the path and writing permissions 
+ (ii) if you specified --outTmpDir, and this directory exists - please remove it before running STAR
+
+May 20 08:18:13 ...... FATAL ERROR, exiting
+[2026-05-20T08:18:13.253] error: private-tmpdir: /tmp/68781.batch.0 nftw error No such file or directory
