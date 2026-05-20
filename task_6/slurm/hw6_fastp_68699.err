@@ -1,0 +1,48 @@
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 19779343
+total bases: 1503230068
+Q20 bases: 1473915459(98.0499%)
+Q30 bases: 1423926063(94.7244%)
+
+Read2 before filtering:
+total reads: 19779343
+total bases: 1503230068
+Q20 bases: 1401373272(93.2241%)
+Q30 bases: 1288821441(85.7368%)
+
+Read1 after filtering:
+total reads: 16972983
+total bases: 1271026706
+Q20 bases: 1259797911(99.1166%)
+Q30 bases: 1231395971(96.882%)
+
+Read2 after filtering:
+total reads: 16972983
+total bases: 1245221474
+Q20 bases: 1219809004(97.9592%)
+Q30 bases: 1161849539(93.3047%)
+
+Filtering result:
+reads passed filter: 33945966
+reads failed due to low quality: 281180
+reads failed due to too many N: 254
+reads failed due to too short: 5331286
+reads with adapter trimmed: 1380670
+bases trimmed due to adapters: 30118328
+
+Duplication rate: 6.44436%
+
+Insert size peak (evaluated by paired-end reads): 76
+
+JSON report: /home/STUDY/FBMF/studfbmf02_07/task_6/results/trimmed/Eg_Treg_S71.fastp.json
+HTML report: /home/STUDY/FBMF/studfbmf02_07/task_6/results/trimmed/Eg_Treg_S71.fastp.html
+
+/home/STUDY/FBMF/studfbmf02_07/.conda_envs/bio_hw5/bin/fastp -i /home/STUDY/FBMF/bioinformatics/rnaseq_map_star/raw_data/Eg_Treg_S71_R1_001.fastq.gz -I /home/STUDY/FBMF/bioinformatics/rnaseq_map_star/raw_data/Eg_Treg_S71_R2_001.fastq.gz -o /home/STUDY/FBMF/studfbmf02_07/task_6/results/trimmed/Eg_Treg_S71_R1_trimmed.fastq.gz -O /home/STUDY/FBMF/studfbmf02_07/task_6/results/trimmed/Eg_Treg_S71_R2_trimmed.fastq.gz -w 4 -z 6 --detect_adapter_for_pe -r --cut_right_window_size 5 --cut_right_mean_quality 20 -l 36 -j /home/STUDY/FBMF/studfbmf02_07/task_6/results/trimmed/Eg_Treg_S71.fastp.json -h /home/STUDY/FBMF/studfbmf02_07/task_6/results/trimmed/Eg_Treg_S71.fastp.html 
+fastp v0.23.4, time used: 62 seconds
+[2026-05-19T11:04:37.853] error: private-tmpdir: /tmp/68699.batch.0 nftw error No such file or directory

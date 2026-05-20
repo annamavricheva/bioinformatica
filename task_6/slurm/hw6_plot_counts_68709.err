@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "/home/STUDY/FBMF/studfbmf02_07/task_6/slurm/plot_star_vs_htseq.py", line 49, in <module>
+    main()
+    ~~~~^^
+  File "/home/STUDY/FBMF/studfbmf02_07/task_6/slurm/plot_star_vs_htseq.py", line 16, in main
+    star_df = pd.read_csv(args.star, sep='\t', header=None, skiprows=4)
+  File "/home/STUDY/FBMF/studfbmf02_07/.conda_envs/rnaseq/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/STUDY/FBMF/studfbmf02_07/.conda_envs/rnaseq/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/STUDY/FBMF/studfbmf02_07/.conda_envs/rnaseq/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/STUDY/FBMF/studfbmf02_07/.conda_envs/rnaseq/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/STUDY/FBMF/studfbmf02_07/.conda_envs/rnaseq/lib/python3.13/site-packages/pandas/io/common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: '/home/STUDY/FBMF/studfbmf02_07/task_6/results/star_alignment/RNA_ReadsPerGene.out.tab'
+[2026-05-19T11:18:19.181] error: private-tmpdir: /tmp/68709.batch.0 nftw error No such file or directory

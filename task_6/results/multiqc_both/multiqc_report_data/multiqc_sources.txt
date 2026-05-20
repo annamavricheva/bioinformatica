@@ -1,0 +1,5 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	Eg_Treg_S71_R1	/home/STUDY/FBMF/studfbmf02_07/task_6/results/fastqc_trim/Eg_Treg_S71_R1_trimmed_fastqc.zip
+FastQC	all_sections	Eg_Treg_S71_R1_001	/home/STUDY/FBMF/studfbmf02_07/task_6/results/fastqc_raw/Eg_Treg_S71_R1_001_fastqc.zip
+FastQC	all_sections	Eg_Treg_S71_R2	/home/STUDY/FBMF/studfbmf02_07/task_6/results/fastqc_trim/Eg_Treg_S71_R2_trimmed_fastqc.zip
+FastQC	all_sections	Eg_Treg_S71_R2_001	/home/STUDY/FBMF/studfbmf02_07/task_6/results/fastqc_raw/Eg_Treg_S71_R2_001_fastqc.zip

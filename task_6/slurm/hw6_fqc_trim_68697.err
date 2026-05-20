@@ -1,0 +1,3 @@
+Skipping '/home/STUDY/FBMF/studfbmf02_07/task_6/results/trimmed/Eg_Treg_S71_R1_trimmed.fastq.gz' which didn't exist, or couldn't be read
+Skipping '/home/STUDY/FBMF/studfbmf02_07/task_6/results/trimmed/Eg_Treg_S71_R2_trimmed.fastq.gz' which didn't exist, or couldn't be read
+[2026-05-19T10:58:11.483] error: private-tmpdir: /tmp/68697.batch.0 nftw error No such file or directory

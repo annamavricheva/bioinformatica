@@ -1,0 +1,6 @@
+
+BAMoutput.cpp:27:BAMoutput: exiting because of *OUTPUT FILE* error: could not create output file /home/STUDY/FBMF/studfbmf02_07/task_6/results/star_alignment/RNA__STARtmp//BAMsort/20/16
+SOLUTION: check that the path exists and you have write permission for this file. Also check ulimit -n and increase it to allow more open files.
+
+May 20 08:20:18 ...... FATAL ERROR, exiting
+[2026-05-20T08:20:18.732] error: private-tmpdir: /tmp/68782.batch.0 nftw error No such file or directory

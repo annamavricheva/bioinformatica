@@ -1,0 +1,22 @@
+
+/// MultiQC 🔍 v1.35
+
+       file_search | Search path: /home/STUDY/FBMF/studfbmf02_07/task_6/results/fastqc_trim
+
+            fastqc | Found 2 reports
+
+     write_results | Data        : /home/STUDY/FBMF/studfbmf02_07/task_6/results/multiqc_after/multiqc_report_data
+     write_results | Report      : /home/STUDY/FBMF/studfbmf02_07/task_6/results/multiqc_after/multiqc_report.html
+           multiqc | MultiQC complete
+
+/// MultiQC 🔍 v1.35
+
+       file_search | Search path: /home/STUDY/FBMF/studfbmf02_07/task_6/results/fastqc_raw
+       file_search | Search path: /home/STUDY/FBMF/studfbmf02_07/task_6/results/fastqc_trim
+
+            fastqc | Found 4 reports
+
+     write_results | Data        : /home/STUDY/FBMF/studfbmf02_07/task_6/results/multiqc_both/multiqc_report_data   (overwritten)
+     write_results | Report      : /home/STUDY/FBMF/studfbmf02_07/task_6/results/multiqc_both/multiqc_report.html   (overwritten)
+           multiqc | MultiQC complete
+[2026-05-19T11:08:20.326] error: private-tmpdir: /tmp/68702.batch.0 nftw error No such file or directory

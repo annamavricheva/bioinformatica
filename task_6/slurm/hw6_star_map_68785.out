@@ -1,0 +1,8 @@
+	/home/STUDY/FBMF/studfbmf02_07/.conda_envs/rnaseq/bin/STAR-avx2 --runThreadN 32 --runMode alignReads --genomeDir /home/STUDY/FBMF/studfbmf02_07/task_6/results/ref/STAR_index_GRCh38 --readFilesIn /home/STUDY/FBMF/studfbmf02_07/task_6/results/trimmed/Eg_Treg_S71_R1_trimmed.fastq.gz /home/STUDY/FBMF/studfbmf02_07/task_6/results/trimmed/Eg_Treg_S71_R2_trimmed.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/STUDY/FBMF/studfbmf02_07/task_6/results/star_alignment/RNA_ --outSAMtype BAM Unsorted --quantMode GeneCounts
+	STAR version: 2.7.11b   compiled: 2025-04-26T21:36:55+0000 :/opt/conda/conda-bld/star_1745703265435/work/source
+May 20 08:22:38 ..... started STAR run
+May 20 08:22:38 ..... loading genome
+May 20 08:22:44 ..... started mapping
+May 20 08:24:12 ..... finished mapping
+May 20 08:24:13 ..... finished successfully
+STAR alignment done

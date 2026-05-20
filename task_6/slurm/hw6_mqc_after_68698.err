@@ -1,0 +1,18 @@
+
+/// MultiQC 🔍 v1.35
+
+       file_search | Search path: /home/STUDY/FBMF/studfbmf02_07/task_6/results/fastqc_trim
+
+           multiqc | No analysis results found. Cleaning up…
+
+/// MultiQC 🔍 v1.35
+
+       file_search | Search path: /home/STUDY/FBMF/studfbmf02_07/task_6/results/fastqc_raw
+       file_search | Search path: /home/STUDY/FBMF/studfbmf02_07/task_6/results/fastqc_trim
+
+            fastqc | Found 2 reports
+
+     write_results | Data        : /home/STUDY/FBMF/studfbmf02_07/task_6/results/multiqc_both/multiqc_report_data
+     write_results | Report      : /home/STUDY/FBMF/studfbmf02_07/task_6/results/multiqc_both/multiqc_report.html
+           multiqc | MultiQC complete
+[2026-05-19T10:58:25.811] error: private-tmpdir: /tmp/68698.batch.0 nftw error No such file or directory
